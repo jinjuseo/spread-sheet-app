@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+    <title>SpreadSheet</title>
+  </head>
+  <body>
+    <header>
+      <button id="export-btn">Export Spreadsheet</button>
+      <span> </span>
+    </header>
+    <main>
+      <p class="cellInfo">Cell : <span id="address"></span></p>
+    </main>
+    <script type="module" src="./excelModules.js"></script>
+    <script type="module" src="./makeTable.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

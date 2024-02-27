@@ -1,0 +1,106 @@
+:root {
+  --focus-bg-color: #96d4d4;
+  --header-color: lightgray;
+  --text-color: black;
+  --bg-color: white;
+  --btn-color: green;
+  --btn-border-color: lightgreen;
+  --focus-text-color: white;
+  --border-color: darkgray;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+header {
+  padding-top: 20px;
+  width: 98%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+#export-btn {
+  background-color: var(--btn-color);
+  padding: 8px;
+  color: var(--focus-text-color);
+  border-color: var(--btn-border-color);
+}
+#export-btn:focus {
+  cursor: pointer;
+}
+main {
+  width: 98vw;
+  height: calc(100vh - 100px);
+  padding-bottom: 20px;
+}
+
+table,
+td {
+  border: 2px solid var(--border-color);
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+
+thead {
+  height: 10%;
+}
+tbody {
+  height: 90%;
+}
+td {
+  width: 90%;
+  padding: 8px;
+  font-size: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+thead,
+td:nth-child(1) {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 20px;
+  border: none;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+  scale: 1;
+}
+
+.active {
+  background-color: var(--focus-bg-color) !important;
+  color: var(--focus-text-color) !important;
+}
+.cellInfo {
+  padding-left: 4px;
+  font-size: 20px;
+}
